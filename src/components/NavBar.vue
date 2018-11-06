@@ -48,33 +48,11 @@ export default {
 };
 </script>
 <style lang="scss" scoped>
-/* 可以设置不同的进入和离开动画 */
-/* 设置持续时间和动画函数 */
-.fade-enter-active {
-  transform: translateY(0%);
-  opacity: 1;
-}
-.fade-leave-active {
-  transition: all 0.3s cubic-bezier(1, 0.5, 0.8, 1);
-}
-.fade-enter,
-.fade-leave-to {
-  opacity: 0;
-  transform: translateY(-150%);
-}
-.change-enter-active {
-  transform: scale(1);
-  transition: all 0.3s ease;
-}
-.change-leave-active {
-  transform: scale(0);
-  transition: all 0.3s cubic-bezier(1, 0.5, 0.8, 1);
-}
-.change-enter,
-.change-leave-to {
-  transform: scale(0);
-}
 .nav-bar {
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  width: 100%;
   display: flex;
   height: 80px;
   justify-content: space-between;
@@ -92,6 +70,7 @@ export default {
     li {
       padding: 10px;
       float: left;
+
       a {
         text-decoration: none;
         display: block;
@@ -101,6 +80,11 @@ export default {
         letter-spacing: 6px;
         font-weight: 900;
         font-size: 14px;
+        transition: all 0.3s;
+        &:hover {
+          color: #ff5a79;
+          font-size: 16px;
+        }
       }
     }
   }
@@ -203,5 +187,30 @@ export default {
   content: "";
   display: block;
   clear: both;
+}
+.fade-enter-active {
+  transform: translateY(0%);
+  opacity: 1;
+  transition: all 0.3s;
+}
+.fade-leave-active {
+  transition: all 0.3s cubic-bezier(1, 0.5, 0.8, 1);
+}
+.fade-enter,
+.fade-leave-to {
+  opacity: 0;
+  transform: translateY(-150%);
+}
+.change-enter-active {
+  transform: scale(1);
+  transition: all 0.3s ease;
+}
+.change-leave-active {
+  transform: scale(0);
+  transition: all 0.3s cubic-bezier(1, 0.5, 0.8, 1);
+}
+.change-enter,
+.change-leave-to {
+  transform: scale(0);
 }
 </style>

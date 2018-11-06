@@ -1,18 +1,27 @@
 <template>
   <div id="app">
     <nav-bar></nav-bar>
-    <div id="content">
+    <Home></Home>
+    <Profile></Profile>
+    <Contact></Contact>
+    <!-- <div id="content">
       <router-link to="/">Home</router-link> |
       <router-link to="/about">About</router-link>
-    </div>
+    </div> -->
     <router-view/>
   </div>
 </template>
 <script>
 import NavBar from "./components/NavBar.vue";
+import Home from "./components/Home.vue";
+import Profile from "./components/Profile.vue";
+import Contact from "./components/Contact";
 export default {
   components: {
-    NavBar
+    NavBar,
+    Home,
+    Profile,
+    Contact
   }
 };
 </script>
