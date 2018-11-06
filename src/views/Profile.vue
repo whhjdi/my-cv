@@ -1,5 +1,5 @@
 <template>
-  <div class="profile">
+  <div class="profile" name='profile'>
     <div class="pic"></div>
     <div class="introduce">
       <h2>个人档</h2>
@@ -23,13 +23,14 @@ export default {
   min-height: 350px;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
-  padding: 20px;
+  padding: 100px 20px;
+  margin-top: 80px;
   .pic {
     width: 200px;
     height: 200px;
-    margin: 20px 10px;
+    margin: 20px 40px;
     border: 4px solid #fff;
     border-radius: 50%;
     background: url("../assets/mine.jpg");
@@ -37,7 +38,7 @@ export default {
     background-size: 200px 200px;
   }
   .introduce {
-    width: 50%;
+    width: 400px;
     text-align: center;
     h2 {
       margin-bottom: 20px;

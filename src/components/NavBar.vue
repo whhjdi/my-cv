@@ -3,31 +3,34 @@
     <div class="logo">沐雪</div>
     <div class="list-wrapper">
       <ul class='nav-list clearfix'>
-        <li><a href="">首页</a></li>
-        <li><a href="">个人档</a></li>
-        <li><a href="">作品集</a></li>
-        <li><a href="">博客</a></li>
-        <li><a href="">留言</a></li>
+        <li v-for="(item,index) in list" :key="item.name"
+          :class="{active:selected===index}"
+          @click="selected=index">
+            <router-link :to="item.to">{{item.name}}</router-link>
+          </li>
       </ul>
     </div>
     <div class="nav-icon" @click="handleList">
-      <transition name="change" >
-      <span v-if='showDropDown' class="deleteX" key='deleteX'></span>
-      <span  v-else class="drop" key="drop"></span>
+      <transition name="change">
+        <span v-if='showDropDown' class="deleteX" key='deleteX'></span>
+        <span v-else class="drop" key="drop"></span>
       </transition>
     </div>
-
     <transition name='fade'>
       <div class="drop-down" v-if="showDropDown">
         <ul class='drop-down-list'>
-          <li><a href="">首页</a></li>
-          <li><a href="">个人档</a></li>
-          <li><a href="">作品集</a></li>
-          <li><a href="">博客</a></li>
-          <li><a href="">留言</a></li>
+          <li v-for="item in list" :key="item.name">
+            <router-link :to="item.to">{{item.name}}</router-link>
+          </li>
         </ul>
       </div>
     </transition>
+    <div class="to-top" @click="scrollToTop" v-show="showScrollToTop">
+      <svg class="icon top" aria-hidden="true">
+        <use xlink:href="#icon-cat-copy"></use>
+      </svg>
+      <div>回到顶部</div>
+    </div>
   </div>
 </template>
 
@@ -37,13 +40,41 @@ export default {
   components: {},
   data() {
     return {
-      showDropDown: false
+      showDropDown: false,
+      showScrollToTop: false,
+      selected: 0,
+      list: [
+        { name: "首页", to: "/", className: "home" },
+        { name: "个人档", to: "profile", className: "profile" },
+        { name: "作品集", to: "works", className: "works" },
+        { name: "博客", to: "blog", className: "blog" },
+        { name: "留言", to: "message", className: "message" }
+      ]
     };
   },
   methods: {
     handleList() {
       this.showDropDown = !this.showDropDown;
+    },
+    scrollToTop() {
+      document.documentElement.scrollTop -= 10;
+      if (document.documentElement.scrollTop > 0) {
+        var timer = setTimeout(() => {
+          this.scrollToTop();
+        });
+      } else {
+        clearTimeout(timer);
+      }
     }
+  },
+  mounted() {
+    window.addEventListener("scroll", () => {
+      if (document.documentElement.scrollTop > 100) {
+        this.showScrollToTop = true;
+      } else {
+        this.showScrollToTop = false;
+      }
+    });
   }
 };
 </script>
@@ -70,11 +101,14 @@ export default {
     li {
       padding: 10px;
       float: left;
-
+      color: #fff;
+      &.active {
+        color: #ff5a79;
+      }
       a {
         text-decoration: none;
         display: block;
-        color: #fff;
+        color: inherit;
         text-shadow: 0px 0px 3px rgba(0, 0, 0, 0.5);
         text-transform: uppercase;
         letter-spacing: 6px;
@@ -83,7 +117,6 @@ export default {
         transition: all 0.3s;
         &:hover {
           color: #ff5a79;
-          font-size: 16px;
         }
       }
     }
@@ -212,5 +245,18 @@ export default {
 .change-enter,
 .change-leave-to {
   transform: scale(0);
+}
+.to-top {
+  position: fixed;
+  bottom: 80px;
+  right: 20px;
+  border: 1px solid #ddd;
+  padding: 5px 10px;
+  border-radius: 10px;
+  color: #fff;
+  .top {
+    width: 4em;
+    height: 4em;
+  }
 }
 </style>

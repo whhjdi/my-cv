@@ -14,8 +14,8 @@
 </template>
 <script>
 /* eslint-disable */
-  var AV = require("leancloud-storage");
-  import ZToast from './ZToast.vue' 
+
+  import ZToast from '../components/ZToast.vue' 
   export default {
     name: "contact",
     data() {
@@ -32,18 +32,6 @@
       handleSubmit(e) {
         const msg = this.msg;
         this.save(msg)
-      },
-      init() {
-        var APP_ID = "V1VjmlxM0uyz6tDOAytCPSaR-gzGzoHsz";
-        var APP_KEY = "h92PRHHvdwsIcW9dSR4PjP0z";
-        AV.init({
-          appId: APP_ID,
-          appKey: APP_KEY
-        });
-      },
-      fetch() {
-        var query = new AV.Query(Message);
-        return query.find(); //Promise对象
       },
       save(object) {
         if (object.name !== "" && object.content !== "") {
@@ -62,8 +50,6 @@
           });
         });;
         } else {
-          console.log(this.$toast);
-          
           this.$toast("留言失败", {
             position: "middle",
             closeButton: {
@@ -72,15 +58,13 @@
                 toast.close();
               }
             },
+            color: "red",
             autoClose: false
           });
-          console.log(1);
-          
         }
       }
     },
     mounted() {
-      this.init();
     }
   };
 </script>
@@ -88,6 +72,7 @@
 <style lang="scss" scoped>
   .contact {
     margin: 0 auto;
+    margin-top:80px;
     padding: 60px 20px;
     background: #ff7381;
     .title {
@@ -102,19 +87,22 @@
       padding: 6px 12px;
       font-size: 14px;
       line-height: 1.42857143;
-      width: 680px;
+      width: 80%;
       height: 200px;
     }
     .formInput {
-      width: 680px;
+      width: 80%;
       margin: 10px auto;
       display: flex;
+      flex-wrap: wrap;
       justify-content: space-between;
       .msg {
         outline: none;
         border: 1px solid #fff;
         height: 40px;
         padding: 0 20px;
+        width:30%;
+        margin-bottom:10px;
       }
     }
     .btn {

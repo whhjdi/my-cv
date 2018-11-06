@@ -1,27 +1,21 @@
 <template>
-  <div id="app">
+  <div id="app" class="wrapper" ref="wrapper">
     <nav-bar></nav-bar>
+     <router-view/>
+    <!--
     <Home></Home>
     <Profile></Profile>
-    <Contact></Contact>
-    <!-- <div id="content">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div> -->
-    <router-view/>
+    <Contact></Contact> -->
+    <MyFooter></MyFooter>
   </div>
 </template>
 <script>
 import NavBar from "./components/NavBar.vue";
-import Home from "./components/Home.vue";
-import Profile from "./components/Profile.vue";
-import Contact from "./components/Contact";
+import MyFooter from "./components/MyFooter";
 export default {
   components: {
     NavBar,
-    Home,
-    Profile,
-    Contact
+    MyFooter
   }
 };
 </script>
