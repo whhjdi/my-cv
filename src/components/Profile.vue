@@ -39,6 +39,9 @@ export default {
   .introduce {
     width: 50%;
     text-align: center;
+    h2 {
+      margin-bottom: 20px;
+    }
   }
 }
 </style>
