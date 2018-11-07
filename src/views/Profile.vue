@@ -20,7 +20,7 @@ export default {
 <style lang="scss" scoped>
 .profile {
   background: #28bbff;
-  height: 600px;
+  height: 620px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;

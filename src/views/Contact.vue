@@ -75,9 +75,11 @@
     padding: 50px 20px;
     background: #ff7381;
     .title {
-      margin-bottom: 20px;
+      margin-top:20px;
+      margin-bottom: 30px;
     }
     .desc {
+      margin-top:20px;
       margin-bottom: 20px;
     }
     .text {
@@ -112,6 +114,7 @@
       background: #ffce49;
       border: 4px solid #000;
       margin-top: 10px;
+      margin-bottom:20px;
       color: #fff;
       font-weight: bold;
       font-size: 18px;

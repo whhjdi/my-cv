@@ -37,7 +37,6 @@ export default {};
   color: #fff;
   .wrapper {
     text-align: left;
-
     > a {
       display: flex;
       justify-content: center;
@@ -62,7 +61,7 @@ export default {};
     }
   }
   .desc {
-    margin-top: 20px;
+    margin-top: 40px;
     font-weight: 400;
   }
 }
