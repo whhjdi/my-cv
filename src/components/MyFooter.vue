@@ -37,12 +37,17 @@ export default {};
   color: #fff;
   .wrapper {
     text-align: left;
+
     > a {
       display: flex;
       justify-content: center;
       align-items: center;
       color: #fff;
       font-weight: bold;
+      transition: al 0.3s ease-in;
+      &:hover {
+        color: #324655;
+      }
       .icon {
         width: 3em;
         height: 3em;
@@ -58,7 +63,7 @@ export default {};
   }
   .desc {
     margin-top: 20px;
-    font-weight: bold;
+    font-weight: 400;
   }
 }
 </style>

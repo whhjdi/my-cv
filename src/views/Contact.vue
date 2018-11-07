@@ -16,7 +16,7 @@
 <script>
 /* eslint-disable */
 
-  import ZToast from '../components/ZToast.vue' 
+  import ZToast from "../components/ZToast.vue";
   export default {
     name: "contact",
     data() {
@@ -32,24 +32,24 @@
     methods: {
       handleSubmit(e) {
         const msg = this.msg;
-        this.save(msg)
+        this.save(msg);
       },
       save(object) {
         if (object.name !== "" && object.content !== "") {
           var X = AV.Object.extend("Message");
           var x = new X();
           return x.save(object).then(() => {
-          this.$toast("留言成功", {
-            position: "middle",
-            closeButton: {
-              text: "ok",
-              callback(toast) {
-                toast.close();
-              }
-            },
-            autoClose: false
+            this.$toast("留言成功", {
+              position: "middle",
+              closeButton: {
+                text: "ok",
+                callback(toast) {
+                  toast.close();
+                }
+              },
+              autoClose: false
+            });
           });
-        });;
         } else {
           this.$toast("留言失败", {
             position: "middle",
@@ -65,14 +65,13 @@
         }
       }
     },
-    mounted() {
-    }
+    mounted() {}
   };
 </script>
 
 <style lang="scss" scoped>
   .contact {
-    margin-top:80px;
+    margin-top: 80px;
     padding: 50px 20px;
     background: #ff7381;
     .title {
@@ -101,8 +100,8 @@
         border: 1px solid #fff;
         height: 40px;
         padding: 0 20px;
-        width:30%;
-        margin-bottom:10px;
+        width: 30%;
+        margin-bottom: 10px;
       }
     }
     .btn {
@@ -110,17 +109,17 @@
       height: 50px;
       border-radius: 25px;
       outline: none;
-      border: 4px solid #fff;
-      background: #40c4ff;
+      background: #ffce49;
+      border: 4px solid #000;
       margin-top: 10px;
       color: #fff;
       font-weight: bold;
       font-size: 18px;
       transition: all 0.3s;
       &:hover {
-        background: #ffce49;
-        border: 4px solid #000;
         color: #000;
+        border: 4px solid #fff;
+        background: #40c4ff;
       }
     }
   }

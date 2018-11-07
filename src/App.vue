@@ -22,7 +22,8 @@ export default {
 
 <style lang="scss">
 #app {
-  font-family: "Avenir", Helvetica, Arial, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
@@ -38,10 +39,6 @@ export default {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-}
-ul,
-ol {
-  list-style: none;
 }
 a {
   text-decoration: none;

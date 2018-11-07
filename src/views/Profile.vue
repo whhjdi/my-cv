@@ -19,7 +19,7 @@ export default {
 
 <style lang="scss" scoped>
 .profile {
-  background: #40c4ff;
+  background: #28bbff;
   height: 600px;
   display: flex;
   flex-wrap: wrap;
@@ -27,6 +27,7 @@ export default {
   align-items: center;
   padding: 100px 20px;
   margin-top: 80px;
+  color: #fff;
   .pic {
     width: 200px;
     height: 200px;
@@ -42,6 +43,9 @@ export default {
     text-align: center;
     h2 {
       margin-bottom: 20px;
+    }
+    p {
+      font-weight: 900;
     }
   }
 }

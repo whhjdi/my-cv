@@ -93,7 +93,7 @@ export default {
     }
   }
   &.middle {
-    top: 50%;
+    top: 40%;
     transform: translate(-50%, -50%);
     .animation {
       animation: fade-in 300ms;

@@ -1,13 +1,11 @@
 <template>
   <div class="nav-bar">
-    <div class="logo">沐雪</div>
+    <a class="logo" href="/">沐雪</a>
     <div class="list-wrapper">
       <ul class='nav-list clearfix'>
-        <li v-for="(item,index) in list" :key="item.name"
-          :class="{active:selected===index}"
-          @click="selected=index">
-            <router-link :to="item.to">{{item.name}}</router-link>
-          </li>
+        <li v-for="(item,index) in list" :key="item.name" :class="{active:selected===index}" @click="selected=index">
+          <router-link :to="item.to">{{item.name}}</router-link>
+        </li>
       </ul>
     </div>
     <div class="nav-icon" @click="handleList">
@@ -29,7 +27,7 @@
       <svg class="icon top" aria-hidden="true">
         <use xlink:href="#icon-cat-copy"></use>
       </svg>
-      <div>回到顶部</div>
+      <p>回到顶部</p>
     </div>
   </div>
 </template>
@@ -79,6 +77,10 @@ export default {
 };
 </script>
 <style lang="scss" scoped>
+ul,
+ol {
+  list-style: none;
+}
 .nav-bar {
   position: fixed;
   z-index: 10;
@@ -140,6 +142,9 @@ export default {
       a {
         color: #fff;
         font-weight: bold;
+        &:hover {
+          color: #2d323b;
+        }
       }
     }
   }
@@ -256,7 +261,7 @@ export default {
   padding: 5px 10px;
   border-radius: 10px;
   color: #fff;
-  font: "Wawati Sc" Georgia, "Times New Roman", Times, serif;
+  font-weight: bold;
   .top {
     width: 4em;
     height: 4em;
