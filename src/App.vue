@@ -28,6 +28,11 @@ export default {
   text-align: center;
   color: #2c3e50;
   font-size: 16px;
+  display: flex;
+  flex-direction: column;
+}
+.my-footer {
+  flex: 1;
 }
 * {
   box-sizing: border-box;

@@ -1,19 +1,19 @@
 <template>
   <div class="my-footer">
     <div class="wrapper">
-      <a href="">
+      <a href="http://paahiebgs.bkt.clouddn.com/weixin.png">
         <svg class="icon" aria-hidden="true">
           <use xlink:href="#icon-chuxu"></use>
         </svg>
         <span>微信</span>
       </a>
-      <a href="">
+      <a href="mailto:418605872@qq.com">
         <svg class="icon" aria-hidden="true">
           <use xlink:href="#icon-wenzhang"></use>
         </svg>
         <span>邮箱</span>
       </a>
-      <a href="">
+      <a href="https://weibo.com/u/2391717207">
         <svg class="icon" aria-hidden="true">
           <use xlink:href="#icon-kafei"></use>
         </svg>

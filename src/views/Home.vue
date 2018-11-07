@@ -26,13 +26,15 @@ export default {
 .home {
   /* background: linear-gradient(135deg, #00060e 0%, #000a22 50%, #001338 100%); */
   margin-top: 80px;
-  padding: 100px 30px;
+  padding: 140px 30px;
   background: #ffdd67;
+  height: 600px;
   h1 {
     font-size: 48px;
+    margin-bottom: 20px;
   }
   .home-button {
-    margin-top: 30px;
+    margin-top: 60px;
     display: block;
     .btn {
       display: inline-block;

@@ -95,28 +95,30 @@ export default {
     font-weight: bold;
     font-size: 18px;
   }
-  .nav-list {
-    list-style: none;
-    margin-right: 30px;
-    li {
-      padding: 10px;
-      float: left;
-      color: #fff;
-      &.active {
-        color: #ff5a79;
-      }
-      a {
-        text-decoration: none;
-        display: block;
-        color: inherit;
-        text-shadow: 0px 0px 3px rgba(0, 0, 0, 0.5);
-        text-transform: uppercase;
-        letter-spacing: 6px;
-        font-weight: 900;
-        font-size: 14px;
-        transition: all 0.3s;
-        &:hover {
+  .list-wrapper {
+    .nav-list {
+      list-style: none;
+      margin-right: 30px;
+      li {
+        padding: 10px;
+        float: left;
+        color: #fff;
+        &.active {
           color: #ff5a79;
+        }
+        a {
+          text-decoration: none;
+          display: block;
+          color: inherit;
+          text-shadow: 0px 0px 3px rgba(0, 0, 0, 0.5);
+          text-transform: uppercase;
+          letter-spacing: 6px;
+          font-weight: 900;
+          font-size: 14px;
+          transition: all 0.3s;
+          &:hover {
+            color: #ff5a79;
+          }
         }
       }
     }
@@ -250,10 +252,11 @@ export default {
   position: fixed;
   bottom: 80px;
   right: 20px;
-  border: 1px solid #ddd;
+  /* border: 1px solid #ddd; */
   padding: 5px 10px;
   border-radius: 10px;
   color: #fff;
+  font: "Wawati Sc" Georgia, "Times New Roman", Times, serif;
   .top {
     width: 4em;
     height: 4em;

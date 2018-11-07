@@ -2,13 +2,14 @@
 <template>
   <div class="contact">
     <h2 class="title">留言</h2>
-    <p class="desc">有什么想说的就写在这里吧！我看到会第一时间回复的</p>
+    <p class="desc">有什么想说的就写在这里吧！我看到会第一时间回复哒！</p>
     <textarea class="text" v-model="msg.content"></textarea>
     <div class="formInput">
-      <input type="text" placeholder="你的昵称" class="msg" v-model="msg.name">
-      <input type="text" placeholder="你的邮箱" class="msg" v-model="msg.email">
-      <input type="text" placeholder="你的主页" class="msg" v-model="msg.blog">
+      <input type="text" placeholder="昵称" class="msg" v-model="msg.name">
+      <input type="text" placeholder="邮箱" class="msg" v-model="msg.email">
+      <input type="text" placeholder="主页" class="msg" v-model="msg.blog">
     </div>
+    <p class="desc">写下你的昵称，让我知道你是谁吧</p>
     <button class="btn" @click="handleSubmit">提交</button>
   </div>
 </template>
@@ -71,9 +72,8 @@
 
 <style lang="scss" scoped>
   .contact {
-    margin: 0 auto;
     margin-top:80px;
-    padding: 60px 20px;
+    padding: 50px 20px;
     background: #ff7381;
     .title {
       margin-bottom: 20px;
@@ -112,7 +112,7 @@
       outline: none;
       border: 4px solid #fff;
       background: #40c4ff;
-      margin-top: 30px;
+      margin-top: 10px;
       color: #fff;
       font-weight: bold;
       font-size: 18px;
