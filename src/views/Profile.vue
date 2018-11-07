@@ -34,7 +34,7 @@ export default {
     margin: 20px 40px;
     border: 4px solid #fff;
     border-radius: 50%;
-    background: url("../assets/mine.jpg");
+    background: url("http://paahiebgs.bkt.clouddn.com/mine.jpg");
     background-repeat: no-repeat;
     background-size: 200px 200px;
   }
