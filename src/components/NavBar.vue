@@ -17,7 +17,7 @@
     <transition name='fade'>
       <div class="drop-down" v-if="showDropDown">
         <ul class='drop-down-list'>
-          <li v-for="item in list" :key="item.name">
+          <li v-for="item in list" :key="item.name" @click="showDropDown=false">
             <router-link :to="item.to">{{item.name}}</router-link>
           </li>
         </ul>
