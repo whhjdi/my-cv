@@ -72,7 +72,7 @@ export default {
           },
           {
             name: "个人网站（vue）",
-            url: "https://github.com/whhjdi"
+            url: "https://github.com/whhjdi/my-cv"
           },
           {
             name: "可爱的喵",
