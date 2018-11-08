@@ -1,6 +1,6 @@
 <template>
   <div class="nav-bar">
-    <a class="logo" href="/">沐雪</a>
+    <a class="logo" href="">沐雪</a>
     <div class="list-wrapper">
       <ul class='nav-list clearfix'>
         <li v-for="(item,index) in list" :key="item.name" :class="{active:selected===index}" @click="selected=index">

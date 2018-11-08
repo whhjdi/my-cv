@@ -30,7 +30,7 @@
         <li>了解<span class="highlight">HTTP协议</span>及浏览器渲染原理，了解基本的前端 <span class="highlight">性能优化策略</span>。</li>
       </ul>
     </div>
-    <a href="" class="btn">
+    <a href="https://wanghandi.top/resume-2018" class="btn">
       点我
       <svg class="icon" aria-hidden="true">
         <use xlink:href="#icon-icon-test"></use>
