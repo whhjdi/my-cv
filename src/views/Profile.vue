@@ -34,7 +34,7 @@ export default {
     margin: 20px 40px;
     border: 4px solid #fff;
     border-radius: 50%;
-    background: url("http://paahiebgs.bkt.clouddn.com/mine.jpg");
+    background: url("https://muxue-image-1254040602.cos.ap-beijing.myqcloud.com/mine.jpg?q-sign-algorithm=sha1&q-ak=AKID2TIjlcfhS4E0K25ejH5t5RnAE8GxkQUT&q-sign-time=1542003555;1542005355&q-key-time=1542003555;1542005355&q-header-list=&q-url-param-list=&q-signature=0332c41ffd2b28f3761206c2f3856168aacbf3e8&x-cos-security-token=8479c00b877d23948b7015cb847f3e6004db482e10001&response-content-disposition=attachment");
     background-repeat: no-repeat;
     background-size: 200px 200px;
   }
