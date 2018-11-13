@@ -25,7 +25,7 @@
           熟悉Vue框架的使用，<span class="highlight">理解重要概念</span>如：生命周期，组件通信，虚拟DOM等。
         </li>
         <li>
-          能够快速上手React，微信小程序等前端<span class="highlight">MVVM</span>框架.熟悉Redux工作流。
+          能够快速上手React，微信小程序等前端框架.了解Redux工作流。
         </li>
         <li>了解<span class="highlight">HTTP协议</span>及浏览器渲染原理，了解基本的前端 <span class="highlight">性能优化策略</span>。</li>
       </ul>

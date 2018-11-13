@@ -86,8 +86,7 @@ export default {
           url: "https://github.com/whhjdi/vue-resumeEdit",
           color: "black",
           preview: "https://wanghandi.top/vue-resumeEdit/dist/#/",
-          pic:
-            "https://muxue-image-1254040602.cos.ap-beijing.myqcloud.com/resume.jpg?q-sign-algorithm=sha1&q-ak=AKID7cC7kKbvYDTp9ytiAJS6WBhdNqeE5dMj&q-sign-time=1542003109;1542004909&q-key-time=1542003109;1542004909&q-header-list=&q-url-param-list=&q-signature=8b38cd5ccf35448ae328accba74c42b45443642f&x-cos-security-token=364c18c5d17b43e1f02f903adeda85e7359c1f1110001&response-content-disposition=attachment",
+          pic: require("../assets/resume.jpg"),
           title:
             "这是一个在线简历编辑器，可以让你方便快捷的构建自己简历，让面试更加分。",
           desc: [
@@ -102,8 +101,7 @@ export default {
           url: "https://github.com/whhjdi/ZUI",
           color: "red",
           preview: "https://wanghandi.top/ZUI/dist/#/",
-          pic:
-            "https://muxue-image-1254040602.cos.ap-beijing.myqcloud.com/myui.png?q-sign-algorithm=sha1&q-ak=AKIDqAGVO05I8xe5ugPegkRoEMQFaghbNZAr&q-sign-time=1542003297;1542005097&q-key-time=1542003297;1542005097&q-header-list=&q-url-param-list=&q-signature=d4254105f824502a3e07e23ca67e61bc3f94b949&x-cos-security-token=4c872529e586a2e787e0f2a6e82140799d6cc80a10001&response-content-disposition=attachment",
+          pic: require("../assets/myui.png"),
           title:
             "这是一个简单的Vue组件的集合，初步实现了tabs,toast,button,input等基础组件，并用在了自己的网站上。",
           desc: [
@@ -118,8 +116,7 @@ export default {
           url: "https://github.com/whhjdi/canvas-demo",
           preview: "https://wanghandi.top/canvas-demo/",
           color: "purple",
-          pic:
-            "https://muxue-image-1254040602.cos.ap-beijing.myqcloud.com/canvas.png?q-sign-algorithm=sha1&q-ak=AKIDXXuRsdNEFg4rHWawV1zOUPEEvAORQXJe&q-sign-time=1542003396;1542005196&q-key-time=1542003396;1542005196&q-header-list=&q-url-param-list=&q-signature=014434761333d471ec8c55f7b530afd92ddaf5d4&x-cos-security-token=055e0818abf0e4acdc083093c51e55470b6df91210001&response-content-disposition=attachment",
+          pic: require("../assets/canvas.png"),
           title: "这是一个用Canvas实现的画板，功能丰富，超好的用户体验。",
           desc: [
             "本项目使用HTMl5的input新增color类型实现了自定义背景色和画笔颜色。",
@@ -132,8 +129,7 @@ export default {
           url: "https://github.com/whhjdi/nav-demo",
           color: "default",
           preview: "https://wanghandi.top/nav-demo/index.html",
-          pic:
-            "https://muxue-image-1254040602.cos.ap-beijing.myqcloud.com/nav1.png?q-sign-algorithm=sha1&q-ak=AKIDQ00oHO1ha8raHG9MqrvTBqo21WJdF3vs&q-sign-time=1542003435;1542005235&q-key-time=1542003435;1542005235&q-header-list=&q-url-param-list=&q-signature=9afbfaee9559b8403f3a6598719ad9088a213d16&x-cos-security-token=6efd0835b26bd3b60be4a61914d12d9c033adf8310001&response-content-disposition=attachment",
+          pic: require("../assets/nav1.png"),
           title:
             "这是一个在线导航，把url和按键绑定，个人最喜欢的，虽然简单但是真的喜欢。",
           desc: [
@@ -146,8 +142,7 @@ export default {
           url: "https://github.com/whhjdi/douban-demo",
           color: "green",
           preview: "https://wanghandi.top/douban-demo/",
-          pic:
-            "https://muxue-image-1254040602.cos.ap-beijing.myqcloud.com/douban.png?q-sign-algorithm=sha1&q-ak=AKID3qKzjpfQqbeg462W1bdPSscxzgcdiIM3&q-sign-time=1542003468;1542005268&q-key-time=1542003468;1542005268&q-header-list=&q-url-param-list=&q-signature=01b6edaf9b88d288ac815830d79434817336d8ec&x-cos-security-token=ed5c0c83a8e7d5660e72ca3f5a91d13cfbdbaa8710001&response-content-disposition=attachment",
+          pic: require("../assets/douban.png"),
           title:
             "这是一个使用豆瓣API实现的搜索项目，样式没设计好，不太好看，但基本功能没问题。",
           desc: [
