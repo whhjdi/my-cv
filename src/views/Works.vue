@@ -82,13 +82,28 @@ export default {
       },
       list: [
         {
+          name: "沐雪MUSIC",
+          url: "https://github.com/whhjdi/vue-resumeEdit",
+          color: "black",
+          preview: "https://wanghandi.top/musicByMuxue",
+          pic:
+            "https://ws1.sinaimg.cn/large/006tNbRwly1fyd3cmqyhwj315y0u0hdu.jpg",
+          title:
+            "这是一个网页版的音乐播放器，十几个页面设计实现大部分必须的功能，好看又好用",
+          desc: [
+            "使用vue-cli3脚手架构建项目,使用vw实现移动端适配",
+            "使用better-scroll实现滚动和轮播，使用vue-lazyload进行图片懒加载，使用lyric-parser进行歌词解析",
+            "使用阿里图标库(icon-font),精心挑选好看的icon",
+            "使用网易云音乐的api实现登录功能，以及基于登录的歌曲推荐和歌单推荐以及签到等功能，处于安全性和稳定性考虑，收藏夹等功能只能在本地使用"
+          ]
+        },
+        {
           name: "在线简历编辑器",
           url: "https://github.com/whhjdi/vue-resumeEdit",
           color: "black",
           preview: "https://wanghandi.top/vue-resumeEdit/dist/#/",
           pic: require("../assets/resume.jpg"),
-          title:
-            "这是一个在线简历编辑器，可以让你方便快捷的构建自己简历，让面试更加分。",
+          title: "这是一个在线简历编辑器，可以让你方便快捷的构建自己简历",
           desc: [
             "使用vue-cli脚手架构建项目,使用vue-router,ES6,Scss",
             "使用Element-ui的部分组件和功能美化页面和前端表单验证",
