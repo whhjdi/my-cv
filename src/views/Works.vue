@@ -83,7 +83,7 @@ export default {
       list: [
         {
           name: "沐雪MUSIC",
-          url: "https://github.com/whhjdi/vue-resumeEdit",
+          url: "https://github.com/whhjdi/musicByMuxue",
           color: "black",
           preview: "https://wanghandi.top/musicByMuxue",
           pic:
@@ -94,7 +94,7 @@ export default {
             "使用vue-cli3脚手架构建项目,使用vw实现移动端适配",
             "使用better-scroll实现滚动和轮播，使用vue-lazyload进行图片懒加载，使用lyric-parser进行歌词解析",
             "使用阿里图标库(icon-font),精心挑选好看的icon",
-            "使用网易云音乐的api实现登录功能，以及基于登录的歌曲推荐和歌单推荐以及签到等功能，处于安全性和稳定性考虑，收藏夹等功能只能在本地使用"
+            "使用网易云音乐的api实现登录功能，以及基于登录的歌曲推荐和歌单推荐以及签到等功能，出于安全性和稳定性考虑，收藏夹等功能只能在本地使用"
           ]
         },
         {
