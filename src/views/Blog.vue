@@ -3,7 +3,7 @@
     <h2>关于我的博客</h2>
     <div class="content">
       <p>用hexo搭建的静态博客，累计文章数量48篇,对我学习前端有很大的帮助。</p>
-      <p>文章记录了前端多数的基础内容，包括HTML，CSS,ES6,TypeScript,vue,react,排序算法，虚拟DOM，webpack4等等。</p>
+      <p>文章记录了前端多数的基础内容，包括HTML，CSS,ES6,TypeScript,vue,react,排序算法，虚拟DOM等等。</p>
     </div>
     <div class="skills">
       <h3 class="title">Skills</h3>
@@ -22,10 +22,10 @@
           <span class="highlight">ES6及ES7</span> 部分新特性。
         </li>
         <li>
-          熟悉Vue框架的使用，<span class="highlight">理解重要概念</span>如：生命周期，组件通信，虚拟DOM等。
+          熟悉Vue框架的使用，<span class="highlight">理解重要概念</span>如：生命周期，组件通信，虚拟DOM等，熟悉组件化的开发方式。
         </li>
         <li>
-          能够快速上手React，微信小程序等前端框架.了解Redux工作流。
+          熟练使用媒体查询开发响应式页面，使用rem,vw/vh等适配方案进行移动端适配
         </li>
         <li>了解<span class="highlight">HTTP协议</span>及浏览器渲染原理，了解基本的前端 <span class="highlight">性能优化策略</span>。</li>
       </ul>

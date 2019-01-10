@@ -98,6 +98,20 @@ export default {
           ]
         },
         {
+          name: "视频解析",
+          url: "https://github.com/whhjdi/video-parse",
+          color: "black",
+          preview: "http://wanghandi.top/video-parse/dist/#/",
+          pic: "https://i.loli.net/2019/01/10/5c36c906878ec.jpg",
+          title:
+            "这是一个可以播放vip视频的网站，接口全部来自互联网，本站不提供解析接口，仅供学习交流",
+          desc: [
+            "搜集互联网的某些接口，实现视频解析播放等功能",
+            "添加当地天气，日期，时间展示",
+            "居家旅行必备佳品，是你追剧的好帮手"
+          ]
+        },
+        {
           name: "在线简历编辑器",
           url: "https://github.com/whhjdi/vue-resumeEdit",
           color: "black",
