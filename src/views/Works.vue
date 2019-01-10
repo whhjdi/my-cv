@@ -97,24 +97,11 @@ export default {
             "使用网易云音乐的api实现登录功能，以及基于登录的歌曲推荐和歌单推荐以及签到等功能，出于安全性和稳定性考虑，收藏夹等功能只能在本地使用"
           ]
         },
-        {
-          name: "视频解析",
-          url: "https://github.com/whhjdi/video-parse",
-          color: "black",
-          preview: "http://wanghandi.top/video-parse/dist/#/",
-          pic: "https://i.loli.net/2019/01/10/5c36c906878ec.jpg",
-          title:
-            "这是一个可以播放vip视频的网站，接口全部来自互联网，本站不提供解析接口，仅供学习交流",
-          desc: [
-            "搜集互联网的某些接口，实现视频解析播放等功能",
-            "添加当地天气，日期，时间展示",
-            "居家旅行必备佳品，是你追剧的好帮手"
-          ]
-        },
+
         {
           name: "在线简历编辑器",
           url: "https://github.com/whhjdi/vue-resumeEdit",
-          color: "black",
+          color: "purple",
           preview: "https://wanghandi.top/vue-resumeEdit/dist/#/",
           pic: require("../assets/resume.jpg"),
           title: "这是一个在线简历编辑器，可以让你方便快捷的构建自己简历",
@@ -138,6 +125,20 @@ export default {
             "添加6种主题色，简洁却不单调，清新有活力。",
             "细小的动画在不经意间体现细节之美。",
             "借鉴参考ElementUI，iView等框架的实现，感谢他们，更多组件持续更新ing。"
+          ]
+        },
+        {
+          name: "视频解析",
+          url: "https://github.com/whhjdi/video-parse",
+          color: "green",
+          preview: "http://wanghandi.top/video-parse/dist/#/",
+          pic: "https://i.loli.net/2019/01/10/5c36c906878ec.jpg",
+          title:
+            "这是一个可以播放vip视频的网站，接口全部来自互联网，本站不提供解析接口，仅供学习交流",
+          desc: [
+            "搜集互联网的某些接口，实现视频解析播放等功能",
+            "添加当地天气，日期，时间展示",
+            "居家旅行必备佳品，是你追剧的好帮手"
           ]
         },
         {

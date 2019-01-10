@@ -3,9 +3,9 @@
     <a class="logo" href="">沐雪</a>
     <div class="list-wrapper">
       <ul class='nav-list clearfix'>
-        <li v-for="(item,index) in list" :key="item.name" :class="{active:selected===index}" @click="selected=index">
-          <router-link :to="item.to">{{item.name}}</router-link>
-        </li>
+        <router-link v-for="(item,index) in list" :to="item.to" tag="li" :key="item.name" active-class="active" @click="selected=index">
+          <a >{{item.name}}</a>
+        </router-link>
       </ul>
     </div>
     <div class="nav-icon" @click="handleList">
@@ -42,7 +42,7 @@ export default {
       showScrollToTop: false,
       selected: 0,
       list: [
-        { name: "首页", to: "/", className: "home" },
+        { name: "首页", to: "home", className: "home" },
         { name: "个人档", to: "profile", className: "profile" },
         { name: "作品集", to: "works", className: "works" },
         { name: "博客", to: "blog", className: "blog" },
