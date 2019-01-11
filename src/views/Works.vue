@@ -97,7 +97,20 @@ export default {
             "使用网易云音乐的api实现登录功能，以及基于登录的歌曲推荐和歌单推荐以及签到等功能，出于安全性和稳定性考虑，收藏夹等功能只能在本地使用"
           ]
         },
-
+        {
+          name: "沐雪商城",
+          url: "https://github.com/whhjdi/shop-vue",
+          color: "black",
+          preview: "https://wanghandi.top/shop-vue/dist",
+          pic: "https://i.loli.net/2019/01/11/5c3879c17984a.png",
+          title: "这是用于移动端的商城，通过mock数据实现模拟商城的实际流程",
+          desc: [
+            "使用vue-cli3脚手架构建项目,使用ren实现移动端适配",
+            "使用vant部分实用的组件",
+            "使用easy-mock（支持https）作为接口",
+            "实现登录注册，分类，购物车，订单支付，地址管理等主要功能"
+          ]
+        },
         {
           name: "在线简历编辑器",
           url: "https://github.com/whhjdi/vue-resumeEdit",

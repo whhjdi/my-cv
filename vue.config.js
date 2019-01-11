@@ -1,3 +1,3 @@
 module.exports = {
-  baseUrl: "/my-cv/dist/"
+  publicPath: process.env.NODE_ENV === "production" ? "/my-cv/dist/" : "/"
 };
