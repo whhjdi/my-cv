@@ -59,10 +59,6 @@ export default {
         title: "其他项目和Demo的集合",
         desc: [
           {
-            name: "小米商城（vue）",
-            url: "https://github.com/whhjdi/mi-vue"
-          },
-          {
             name: "简书（react）",
             url: "https://github.com/whhjdi/jianshu-react"
           },
@@ -100,7 +96,7 @@ export default {
         {
           name: "沐雪商城",
           url: "https://github.com/whhjdi/shop-vue",
-          color: "black",
+          color: "default",
           preview: "https://wanghandi.top/shop-vue/dist",
           pic: "https://i.loli.net/2019/01/11/5c3879c17984a.png",
           title: "这是用于移动端的商城，通过mock数据实现模拟商城的实际流程",
