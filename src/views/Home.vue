@@ -8,7 +8,7 @@
           <use xlink:href="#icon-star"></use>
         </svg>
         Github</a>
-      <a href="https://wanghandi.top" class="btn">
+      <a href="https://whhjdi.xyz" class="btn">
         <svg class="icon" aria-hidden="true">
           <use xlink:href="#icon-jiangbei-"></use>
         </svg>

@@ -17,6 +17,7 @@
 /* eslint-disable */
 
   import ZToast from "../components/ZToast.vue";
+  var AV = require("leancloud-storage");
   export default {
     name: "contact",
     data() {

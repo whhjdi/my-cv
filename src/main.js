@@ -1,9 +1,9 @@
 /* eslint-disable */
+var AV = require("leancloud-storage");
 import Vue from "vue";
 import App from "./App.vue";
 import router from "./router";
 import plugin from "./components/plugin";
-var AV = require("leancloud-storage");
 Vue.use(plugin);
 Vue.config.productionTip = false;
 

@@ -258,6 +258,7 @@ ol {
   bottom: 80px;
   right: 20px;
   /* border: 1px solid #ddd; */
+  cursor: pointer;
   padding: 5px 10px;
   border-radius: 10px;
   color: #fff;
